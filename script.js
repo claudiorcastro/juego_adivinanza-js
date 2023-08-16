@@ -8,7 +8,7 @@ let intentos = 0
 function chequearResultado(){
     intentos ++
     intento.textContent = intentos
-    intento.style.color = 'blue'
+    intento.style.color = 'blue';
     let numeroIngresado = parseInt(numeroEntrada.value)
 
     if(numeroIngresado < 1 || numeroIngresado > 100 || isNaN(numeroIngresado)){
