@@ -1,9 +1,14 @@
 let numeroAzar = Math.floor(Math.random() * 100) + 1;
 let numeroEntrada = document.getElementById('numeroEntrada');
 let mensaje = document.getElementById('mensaje');
+let intento = document.getElementById('intento');
+let intentos = 0
 
 
 function chequearResultado(){
+    intentos ++
+    intento.textContent = intentos
+    intento.style.color = 'blue'
     let numeroIngresado = parseInt(numeroEntrada.value)
 
     if(numeroIngresado < 1 || numeroIngresado > 100 || isNaN(numeroIngresado)){
